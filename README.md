@@ -1,5 +1,3 @@
-### html-crib-sheet
-
-<hr />
+# HTML CHEAT SHEET
 
 Basic HTML tags.
