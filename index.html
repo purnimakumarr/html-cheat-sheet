@@ -1,98 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <meta name="description" content="A crib sheet displaying basic tags of html" />
-        <title>HTML Crib Sheet</title>
-    </head>
-    <body>
-        <section id="one">
-            <h1>Welcome to HTML Crib Sheet</h1>
-            <h2>This page is made by using basic tags of html.</h2>
-            <p><strong>This is paragraph with some dummy text.</strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
-                been the industry's standard dummy text ever since the 1500s, when an unknown printer took 
-                a galley of type and scrambled it to make a type specimen book. 
-                <br />It has survived not only 
-                five centuries, but also the leap into electronic typesetting, remaining essentially 
-                unchanged. It was popularised in the 1960s with the release of Letraset sheets 
-                containing Lorem Ipsum passages, and more recently with desktop publishing 
-                software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
-            <h3>Some Quotes:-</h3>
-            <blockquote>The more I know, the more I realise I know nothing.</blockquote>
-            <q>Death is not a opposite of life, but a part of it.</q>
-        </section>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <meta name="description" content="An HTML cheat sheet." />
+    <title>HTML Cheat Sheet</title>
+  </head>
+  <body>
+    <main>
+      <!-- Section 1 -->
+      <section id="one">
+        <h1>
+          <abbr title="Hyper Text Markup Language">HTML</abbr> Cheat Sheet
+        </h1>
+        <h2>This page is made by using basic tags of html.</h2>
+        <p>
+          <strong>This is some strong text!</strong> Lorem Ipsum is simply dummy
+          text of the printing and typesetting industry. Lorem Ipsum has been
+          the industry's standard dummy text ever since the 1500s, when an
+          unknown <mark>printer took a galley of type</mark> and scrambled it to
+          make a type specimen book. <br />It has survived not only five
+          centuries, but also the leap into electronic typesetting, remaining
+          essentially unchanged. It was popularised in the 1960s with the
+          release of Letraset sheets containing Lorem Ipsum passages, and more
+          recently <mark>with desktop</mark> publishing software like Aldus
+          PageMaker including versions of Lorem Ipsum.
+          <em>This is some emphasized text!</em>
+          <strong
+            ><em
+              >This is some text which is both strong and emphasized!</em
+            ></strong
+          >
+        </p>
+        <!-- Quotes -->
+        <h3>Some Quotes:-</h3>
+        <blockquote>
+          The more I know, the more I realise I know nothing.
+        </blockquote>
+        <q>Death is not a opposite of life, but a part of it.</q>
+      </section>
 
-        <section id="two">
-            <ul>
-                <li><a href="#four">Gallery</a></li>
-                <li><a href="#five">Form</a></li>
-                <li><a href="#six">Table</a></li>
-                <li><a href="#footer">Bottom</a></li>
-            </ul>
-        </section>
+      <!-- Section 2 -->
+      <section id="two">
+        <!-- Unordered list -->
+        <h2>
+          Click on the links below to jump to the mentioned section the page.
+        </h2>
+        <ul>
+          <li><a href="#four">Gallery</a></li>
+          <li><a href="#five">Form</a></li>
+          <li><a href="#six">Table</a></li>
+          <li><a href="#footer">Bottom</a></li>
+        </ul>
+      </section>
 
-        <section id="three">
-            <h4>Learn Web development:-</h4>
-            <ol>
-                <li><a href="https://www.w3schools.com/html/">Learn HTML</a></li>
-                <li><a href="https://web.dev/learn/css/">Learn CSS</a></li>
-                <li><a href="https://www.codecademy.com/learn/introduction-to-javascript">Learn JAVAScript</a></li>
-                <li><a href="codecademy.com/learn/learn-php">Learn PHP</a></li>
-            </ol>
-        </section>
+      <!-- Section 3 -->
+      <section id="three">
+        <!-- Ordered List -->
+        <h2>Learn Web development:-</h2>
+        <ol>
+          <li><a href="https://www.w3schools.com/html/">Learn HTML</a></li>
+          <li><a href="https://web.dev/learn/css/">Learn CSS</a></li>
+          <li>
+            <a
+              href="https://www.codecademy.com/learn/introduction-to-javascript"
+              >Learn JAVAScript</a
+            >
+          </li>
+          <li><a href="codecademy.com/learn/learn-php">Learn PHP</a></li>
+        </ol>
+      </section>
 
-        <section id="four">
-            <h4>Gallery:-</h4>
+      <!-- Section 4 -->
+      <section id="four">
+        <!-- Gallery -->
+        <h2>Gallery:-</h2>
+        <div>
+          <img
+            src="images\cute-puppy-body-image.jpg"
+            alt="This is an image of a dog"
+            width="33.33%"
+            height="200px"
+            align="left"
+          />
+          <img
+            src="images\download.jpg"
+            alt="This is an image of a dog"
+            width="33.33%"
+            height="200px"
+            align="right"
+          />
+          <img
+            src="images\puppy.jpg"
+            alt="This is a picture of a dog"
+            width="33.33%"
+            height="200px"
+            ,
+            align="center"
+          />
+        </div>
+      </section>
+
+      <!-- Section 5 -->
+      <section id="five">
+        <!-- Form -->
+        <h2>Form:-</h2>
+        <div>
+          <h3>
+            Note: Form is only designed and not implemented so submitting it
+            will do nothing.
+          </h3>
+          <form action="submit">
+            <!-- Input type: text -->
             <div>
-                <img src="images\cute-puppy-body-image.jpg" alt="This is an image of a dog" width="33.33%" height="200px" align="left" />
-                <img src="images\download.jpg" alt="This is an image of a dog" width="33.33%" height="200px" align="right" />
-                <img src="images\puppy.jpg" alt="This is a picture of a dog" width="33.33%" height="200px", align="center" />
+              <label>Enter first name</label>
+              <input
+                type="text"
+                name="first-name"
+                id="first-name"
+                placeholder="eg. John"
+                required
+              />
             </div>
-        </section>
-
-        <section id="five">
+            <!-- Input type: text -->
             <div>
-                <h5>Note: Form is only designed and not implemented so submitting it will do nothing.</h5>
+              <label>Enter last name</label>
+              <input
+                type="text"
+                name="last-name"
+                id="last-name"
+                placeholder="eg. Smith"
+                required
+              />
+            </div>
+            <!-- Input type: email -->
+            <div>
+              <label>Enter e-mail address</label>
+              <input
+                type="email"
+                name="e-mail"
+                id="e-mail"
+                placeholder="eg. abc@example.com"
+                required
+              />
+            </div>
+            <!-- Inpu type: number -->
+            <div>
+              <label>Enter age</label>
+              <input
+                type="number"
+                name="age"
+                id="age"
+                placeholder="32"
+                required
+              />
+            </div>
+            <!-- Textarea -->
+            <div>
+              <label>Enter your message(option)</label>
+              <textarea
+                name="feedback"
+                id="feedback"
+                cols="30"
+                rows="10"
+                placeholder="Enter your feedback here.."
+              ></textarea>
+            </div>
+            <!-- Selection -->
+            <select required>
+              <option value="default">Select an option</option>
+              <option value="option-1">option 1</option>
+              <option value="option-2">Option 2</option>
+              <option value="option-3">Option 3</option>
+            </select>
+            <!-- Input type: radio -->
+            <div>
+              <h4>Radio buttons:-</h4>
+              <fieldset>
+                <legend>Choose an option</legend>
                 <div>
-                    <form action="submit">
-                        <input type="text" name="first-name" id="first-name" placeholder="Enter first name"/>
-                        <input type="text" name="last-name" id="last-name" placeholder="Enter last name"/>
-                        <input type="text" name="e-mail" id="e-mail" placeholder="Enter e-mail id"/>
-                        <textarea name="feedback" id="feedback" cols="30" rows="10" placeholder="Enter your feedback here.."></textarea>
-                        <input type="submit" name="submit" id="submit_button" value="Submit"/>
-                    </form>
-                </div>  
+                  <input
+                    type="radio"
+                    value="option-1"
+                    id="radio-1"
+                    name="radiogroup"
+                  />
+                  <label for="radio-1">Option 1</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    value="option-2"
+                    id="radio-2"
+                    name="radiogroup"
+                    checked
+                  />
+                  <label for="radio-2">Option 2</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    value="option-3"
+                    id="radio-3"
+                    name="radiogroup"
+                  />
+                  <label for="radio-3">Option 3</label>
+                </div>
+              </fieldset>
             </div>
-        </section>
-        
-        <section id="six">
-            <h5>Table:-</h5>
-            <table style="width: 20%;" cellspacing="10px", cellpadding="10px">
-                <thead>
-                    <tr>
-                        <th>Firstname</th>
-                        <th>Lastname</th>
-                        <th>Age</th>
-                      </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>John</td>
-                        <td>Smith</td>
-                        <td>50</td>
-                      </tr>
-                      <tr>
-                        <td>Eve</td>
-                        <td>Jackson</td>
-                        <td>94</td>
-                      </tr>
-                </tbody>
-            </table>
-        </section>
-    </body>
+            <!-- Input type: checkbox -->
+            <div>
+              <h4>Checkboxes:-</h4>
+              <fieldset>
+                <legend>Check the options you like</legend>
+                <div>
+                  <input
+                    type="checkbox"
+                    value="option-1"
+                    id="checkbox-1"
+                    checked
+                  />
+                  <label dor="checkbox-1">Option 1</label>
+                </div>
+                <div>
+                  <input type="checkbox" value="option-2" id="checkbox-2" />
+                  <label for="checkbox-2">Option 2</label>
+                </div>
+                <div>
+                  <input type="checkbox" value="option-2" id="checkbox-3" />
+                  <label for="checkbox-3">Option 3</label>
+                </div>
+              </fieldset>
+            </div>
+
+            <br />
+            <!-- Input type: button -->
+            <input type="button" value="Button" id="color-picker" />
+            <!-- Input type: color -->
+            <div>
+              <label for="color-picker">Choose a color:-</label>
+              <input type="color" id="color-picker" />
+            </div>
+            <!-- Input type: date -->
+            <div>
+              <label>Choose a date:-</label>
+              <input type="date" />
+            </div>
+            <!-- Input type: file -->
+            <div>
+              <label for="file-upload">You can also upload a file here,</label>
+              <input type="file" id="file-upload" />
+            </div>
+            <!-- Input type: month -->
+            <div>
+              <label for="month">Enter month:</label>
+              <input type="month" id="month" />
+            </div>
+            <!-- Input type: password -->
+            <div>
+              <label for="password">Enter password:</label>
+              <input type="password" id="password" />
+            </div>
+            <!-- Input type: range -->
+            <div>
+              <label for="range">We also have a range input field, </label>
+              <input type="range" id="range" />
+            </div>
+            <!-- Input type: tel -->
+            <div>
+              <label id="phone">Enter telephone number:</label>
+              <input type="tel" id="phone" />
+            </div>
+
+            <br />
+            <!-- Input type: submit -->
+            <input
+              type="submit"
+              name="submit"
+              id="submit_button"
+              value="Submit"
+            />
+          </form>
+        </div>
+      </section>
+
+      <!-- Section 6 -->
+      <section id="six">
+        <!-- Table -->
+        <h2>Table:-</h2>
+        <table style="width: 20%" cellspacing="10px" , cellpadding="10px">
+          <caption>
+            This is a table
+          </caption>
+          <thead>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Age</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>Smith</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Eve</td>
+              <td>Jackson</td>
+              <td>94</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Section 7 -->
+      <section id="seven">
+        <span
+          >We can also display code in web pages like this,
+          <code>selectAll()</code>, <code>push()</code>,
+          <code>pop()</code></span
+        >
+        <br />
+        <figure>
+          <figcaption>Here is some fun audio for you to listen:</figcaption>
+          <audio
+            controls
+            src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"
+          >
+            Your browser doesn't suppoet the a<code>audio</code> element!
+          </audio>
+        </figure>
+
+        <div>
+          <h3>Here is a button that deosn't do anything:-</h3>
+          <button>Click me!</button>
+        </div>
+
+        <div>
+          <h3>Here are some details:</h3>
+          <details>
+            <summary>Lorem ipsum</summary>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse,
+              repudiandae fuga repellendus quidem distinctio hic molestiae? Eum,
+              magnam! Error, voluptatem veniam nulla atque officiis ipsam
+              aperiam! Consectetur beatae corporis expedita.
+            </p>
+          </details>
+          <details>
+            <summary>Lorem ipsum</summary>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </details>
+          <details>
+            <summary>Lorem ipsum</summary>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Quae quam ad
+              minus incidunt saepe illum, voluptates sunt. Expedita laborum
+              mollitia reiciendis illum corrupti totam, voluptatem debitis
+              veniam autem, aliquam explicabo?
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <hr />
+    </main>
+
+    <!-- Footer -->
     <footer id="footer">
-        <p align="right">&copy; build & designed by <a href="https://github.com/purnimakumarr">Purnima Kumar</a> &hearts;</p>
+      <p align="center">
+        &copy; build by
+        <a href="https://github.com/purnimakumarr">Purnima Kumar</a>
+      </p>
     </footer>
+  </body>
 </html>
